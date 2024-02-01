@@ -23,11 +23,38 @@
             "assets": [
               "src/favicon.ico",
               "src/assets"
+              
             ],
             "styles": [
-              "src/styles.css"
+              "bootstrap/dist/css/bootstrap.min.css",     
+              "src/css/style.css",
+              "src/css/custom.css",
+              "src/css/jquery-ui.min.css",
+              "src/css/font-awesome.min.css",
+              "src/css/semantic.min.css",
+              "src/css/jquery-ui-timepicker-addon.min.css",
+              "src/css/select2.min.css",
+              "src/datatables/css/dataTables.min.css",
+              "src/css/pe-icon-7-stroke.css",
+              "src/css/themify-icons.css",
+              "src/css/flash.css"    
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/jquery-3.5.1.min.js",
+              "bootstrap/dist/js/bootstrap.min.js",            
+              "src/js/jquery-ui.min.js",
+              "src/js/custom.js",
+              "src/js/pace.min.js",
+              "src/js/jquery.slimscroll.min.js",
+              "src/js/jquery-ui-sliderAccess.js",
+              "src/js/jquery-ui-timepicker-addon.min.js",
+              "src/js/select2.min.js",
+              "src/js/semantic.min.js",
+              "src/datatables/js/dataTables.min.js",
+              "src/js/tinymce.min.js",
+              "src/js/tableHeadFixer.js",
+              "src/js/frame.js"             
+            ]
           },
           "configurations": {
             "production": {

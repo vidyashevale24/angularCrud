@@ -1,0 +1,590 @@
+<body class="sidebar-mini  pace-done">
+    <div class="pace  pace-inactive">
+        <div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
+    </div>
+    <div id="__site-base-url" data-base-url="">
+    </div>
+    <script src="../../../js/languageInit.js" type="text/javascript"></script>
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <header class="main-header">
+            <a href="dashboard/home" class="logo">
+                <!-- Logo -->
+                <span class="logo-mini">
+                    <img src="../../../assets/images/36ae88214f66496f41748bc540380980.png" alt="" />
+                </span>
+                <span class="logo-lg">
+                    <img src="../../../assets/images/36ae88214f66496f41748bc540380980.png" alt="" />
+                </span>
+            </a>
+
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top">
+                <a href="doctor#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <!-- Sidebar toggle button-->
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="pe-7s-keypad"></span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- settings -->
+                        <li class="dropdown dropdown-user">
+                            <a href="doctor#" class="dropdown-toggle" data-toggle="dropdown"> <i class="pe-7s-settings"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="dashboard/profile"><i class="pe-7s-users"></i> Profile</a></li>
+                                <li><a href="dashboard/form"><i class="pe-7s-settings"></i> Edit Profile</a></li>
+                                <li><a href="dashboard/resetPassword"><i class="pe-7s-key"></i> Update Password</a></li>
+                                <li><a href="logout"><i class="pe-7s-power"></i> Log Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- =============================================== -->
+        <!-- Left side column. contains the sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar -->
+            <div class="sidebar" style="height: auto;">
+                <!-- Sidebar user panel -->
+                <div class="user-panel text-center">
+                    <div class="image">
+                        <img src="../../../assets/images/ae66a4ca7952505ef3980398dfa267d9.jpg" class="img-circle" alt="User Image" />
+                    </div>
+                    <div class="info">
+                        <p>johan movu</p>
+                        <a href="doctor#"><i class="fa fa-circle text-success"></i>
+                            Admin</a>
+                    </div>
+                </div>
+                <!-- sidebar menu -->
+                <ul class="sidebar-menu">
+                    <li class="">
+                        <a href="dashboard/home"><i class="fa fa ti-home"></i> Dashboard</a>
+                    </li>
+
+                    <li class="treeview active">
+                        <a href="doctor#">
+                            <i class="fa fa-sitemap"></i> <span>Department</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu menu-open" style="display: block;">
+                            <li><a href="department/create">Add Department</a></li>
+                            <li><a href="department">Department List</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="doctor#">
+                            <i class="fa fa-user-md"></i> <span>Doctor</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu" style="display: none;">
+                            <li><a href="doctor/create">Add Doctor</a></li>
+                            <li><a href="doctor">Doctor List</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview ">
+                        <a href="doctor#">
+                            <i class="fa fa-wheelchair"></i> <span>Patient</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="patient/create">Add Patient</a></li>
+                            <li><a href="patient">Patient List</a></li>
+                            <li><a href="patient/document_form">Add Document</a></li>
+                            <li><a href="patient/document">Document List</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="treeview ">
+                        <a href="doctor#">
+                            <i class="fa ti-calendar"></i> <span>Schedule</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="schedule/create">Add Schedule</a></li>
+                            <li><a href="schedule">Schedule List</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview ">
+                        <a href="doctor#">
+                            <i class="fa fa ti-pencil-alt"></i> <span>Appointment</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="appointment/create">Add Appointment</a></li>
+                            <li><a href="appointment">Appointment List</a></li>
+                            <li><a href="report/assign_by_all"> Assign by All </a></li>
+                            <li><a href="report/assign_by_all_doctor">Assign by Doctor </a></li>
+                            <li><a href="report/assign_by_all_representative"> Assign by Representative </a></li>
+                            <li><a href="report/assign_to_all_doctor"> Assign to Doctor</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="treeview ">
+                        <a href="doctor#">
+                            <i class="fa ti-book"></i><span>Prescription</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="prescription/case_study/create">Add Patient Case Study</a></li>
+                            <li><a href="prescription/case_study">Patient Case Study List</a></li>
+                            <li><a href="prescription/prescription">Prescription List</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview ">
+                        <a href="doctor#">
+                            <i class="fa fa-money"></i> <span>Account Manager</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="account_manager/account/create">Add Account</a></li>
+                            <li><a href="account_manager/account">Account List</a></li>
+                            <li><a href="account_manager/invoice/create">Add Invoice</a></li>
+                            <li><a href="account_manager/invoice">Invoice List</a></li>
+                            <li><a href="account_manager/payment/create">Add Payment</a></li>
+                            <li><a href="account_manager/payment">Payment List</a></li>
+                            <li><a href="account_manager/report">Report</a></li>
+                            <li><a href="account_manager/report/debit">Debit Report</a></li>
+                            <li><a href="account_manager/report/credit">Credit Report</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview ">
+                        <a href="doctor#">
+                            <i class="fa fa-shield"></i> <span>Insurance </span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="insurance/insurance/form">Add Insurance</a></li>
+                            <li><a href="insurance/insurance">Insurance List</a></li>
+                            <li><a href="insurance/limit_approval/form">Add Limit Approval</a></li>
+                            <li><a href="insurance/limit_approval">Limit Approval List</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview ">
+                        <a href="doctor#">
+                            <i class="fa fa-edit"></i> <span>Billing </span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="billing/service/form">Add Service</a></li>
+                            <li><a href="billing/service/index">Service List</a></li>
+                            <li><a href="billing/package/form">Add Package</a></li>
+                            <li><a href="billing/package/index">Package List</a></li>
+                            <li><a href="billing/admission/form">Add Patient Admission</a></li>
+                            <li><a href="billing/admission">Patient Admission List</a></li>
+                            <li><a href="billing/advance/form">Add Advance Payment</a></li>
+                            <li><a href="billing/advance">Advance Payment List</a></li>
+                            <li><a href="billing/bill/form">Add Bill</a></li>
+                            <li><a href="billing/bill">Bill List</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview  ">
+                        <a href="doctor#">
+                            <i class="fa fa-users"></i> <span>Human Resources</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="human_resources/employee/form">Add Employee</a></li>
+                            <li><a href="human_resources/employee/index/accountant">Accountant List</a></li>
+                            <li><a href="human_resources/employee/index/laboratorist">Laboratorist List</a></li>
+                            <li><a href="human_resources/employee/index/nurse">Nurse List</a></li>
+                            <li><a href="human_resources/employee/index/pharmacist">Pharmacist List</a></li>
+                            <li><a href="human_resources/employee/index/receptionist">Receptionist List</a></li>
+                            <li><a href="human_resources/employee/index/representative">Representative List</a></li>
+                            <li><a href="human_resources/employee/index/case_manager">Case Manager List</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview ">
+                        <a href="doctor#">
+                            <i class="fa fa-bed"></i> <span>Bed Manager </span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="bed_manager/bed/form">Add Bed</a></li>
+                            <li><a href="bed_manager/bed">Bed List</a></li>
+                            <li><a href="bed_manager/bed_assign/create">Bed Assign</a></li>
+                            <li><a href="bed_manager/bed_assign">Bed Assign List</a></li>
+                            <li><a href="bed_manager/report">Report</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview ">
+                        <a href="doctor#">
+                            <i class="fa fa-bell"></i> <span>Noticeboard </span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="noticeboard/notice/form">Add Notice</a></li>
+                            <li><a href="noticeboard/notice">Notice List</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview ">
+                        <a href="doctor#">
+                            <i class="fa fa-heartbeat"></i> <span>Case Manager </span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="case_manager/patient/form">Add Patient</a></li>
+                            <li><a href="case_manager/patient">Patient List</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview ">
+                        <a href="doctor#">
+                            <i class="fa fa-hospital-o"></i> <span>Hospital Activities </span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="hospital_activities/birth/form"> Add Birth Report</a></li>
+                            <li><a href="hospital_activities/birth/index">Birth Report</a></li>
+                            <li><a href="hospital_activities/death/form"> Add Death Report</a></li>
+                            <li><a href="hospital_activities/death/index">Death Report</a></li>
+                            <li><a href="hospital_activities/operation/form"> Add Operation Report</a></li>
+                            <li><a href="hospital_activities/operation/index">Operation Report</a></li>
+                            <li><a href="hospital_activities/investigation/form"> Add Investigation Report</a></li>
+                            <li><a href="hospital_activities/investigation/index">Investigation Report</a></li>
+                            <li><a href="hospital_activities/category/form"> Add Medicine Category</a></li>
+                            <li><a href="hospital_activities/category/index">Medicine Category List</a></li>
+                            <li><a href="hospital_activities/medicine/form"> Add Medicine</a></li>
+                            <li><a href="hospital_activities/medicine/index">Medicine List</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview ">
+                        <a href="doctor#">
+                            <i class="fa fa ti-settings"></i> <span>Setting</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="setting"> App Setting </a></li>
+                            <li><a href="language"> Language Setting </a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="treeview ">
+                        <a href="doctor#">
+                            <i class="fa fa-commenting-o"></i> <span>SMS</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="sms/sms_setup_controller/sms_gateway"> Gateway Setting </a></li>
+                            <li><a href="sms/sms_setup_controller/sms_template"> SMS Template </a></li>
+                            <li><a href="sms/sms_setup_controller/sms_scheduler"> SMS Schedule </a></li>
+                            <li><a href="sms/sms_setup_controller/custom_sms">Send Custom SMS </a></li>
+                            <li><a href="sms/sms_report_controller/custom_sms_list">Custom SMS List </a></li>
+                            <li><a href="sms/sms_report_controller/auto_sms_list">Auto SMS Report </a></li>
+                            <li><a href="sms/sms_report_controller/user_sms_list">User SMS List </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview ">
+                        <a href="https://hospitalnew.bdtask.com/demo7/doctor#">
+                            <i class="fa fa-comments-o"></i> <span>Messages</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="https://hospitalnew.bdtask.com/demo7/messages/message/new_message"> New
+                                    Message </a></li>
+                            <li><a href="https://hospitalnew.bdtask.com/demo7/messages/message"> Inbox </a></li>
+                            <li><a href="https://hospitalnew.bdtask.com/demo7/messages/message/sent">Sent </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview ">
+                        <a href="https://hospitalnew.bdtask.com/demo7/doctor#">
+                            <i class="fa fa ti-email"></i> <span>Mail</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="https://hospitalnew.bdtask.com/demo7/mail/email">Send Mail </a></li>
+                            <li><a href="https://hospitalnew.bdtask.com/demo7/mail/setting">Mail Setting </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <!-- /.sidebar -->
+        </aside>
+
+        <!-- =============================================== -->
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper" style="min-height: 1048px;">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <div class="p-l-30 p-r-30">
+                    <div class="header-icon"><i class="pe-7s-world"></i></div>
+                    <div class="header-title">
+                        <h1>Doctor</h1>
+                        <small>Doctor List</small>
+                    </div>
+                </div>
+            </section>
+            <!-- Main content -->
+            <div class="content">
+                <div id="demoModeEnable"></div>
+                <input type="hidden" name="CSRF_TOKEN" id="CSRF_TOKEN" value="b62b6afa3dc00291a4f67efcd5b8beb1">
+                <!-- alert message -->
+                <!-- content -->
+                <div class="row">
+                    <!--  table area -->
+                    <div class="col-sm-12">
+                        <div class="panel panel-default thumbnail">
+                            <div class="panel-heading no-print">
+                                <div class="btn-group">
+                                    <a class="btn btn-success" href="https://hospitalnew.bdtask.com/demo7/doctor/create">
+                                        <i class="fa fa-plus"></i> Add Doctor </a>
+                                </div>
+                            </div>
+
+                            <div class="panel-body">
+                                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="dataTables_length" id="DataTables_Table_0_length">
+                                                <label>Show
+                                                    <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
+                                                        class="form-control input-sm select2-hidden-accessible"
+                                                        tabindex="-1" aria-hidden="true">
+                                                        <option value="10">10</option>
+                                                        <option value="25">25</option>
+                                                        <option value="50">50</option>
+                                                        <option value="-1">All</option>
+                                                    </select>
+                                                    <span class="select2 select2-container select2-container--default select2-container--focus"
+                                                        dir="ltr" style="width: 75px;">
+                                                        <span class="selection">
+                                                            <span class="select2-selection select2-selection--single"
+                                                                role="combobox" aria-haspopup="true" aria-expanded="false"
+                                                                tabindex="0" aria-labelledby="select2-DataTables_Table_0_length-m1-container">
+                                                                <span class="select2-selection__rendered" id="select2-DataTables_Table_0_length-m1-container"
+                                                                    title="10">
+                                                                    <span class="select2-selection__clear">×</span>10
+                                                                </span>
+                                                                <span class="select2-selection__arrow" role="presentation">
+                                                                    <b role="presentation"></b>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                        <!-- <span class="dropdown-wrapper" aria-hidden="false"> </span> -->
+                                                    </span> entries
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 text-center">
+                                            <div class="dt-buttons btn-group">
+                                                <a class="btn btn-default buttons-copy buttons-html5 btn-sm" tabindex="0"
+                                                    aria-controls="DataTables_Table_0"><span>Copy</span></a>
+                                                <a class="btn btn-default buttons-csv buttons-html5 btn-sm" tabindex="0"
+                                                    aria-controls="DataTables_Table_0"><span>CSV</span></a>
+                                                <a class="btn btn-default buttons-excel buttons-html5 btn-sm" tabindex="0"
+                                                    aria-controls="DataTables_Table_0"><span>Excel</span></a>
+                                                <a class="btn btn-default buttons-pdf buttons-html5 btn-sm" tabindex="0"
+                                                    aria-controls="DataTables_Table_0"><span>PDF</span></a>
+                                                <a class="btn btn-default buttons-print btn-sm" tabindex="0"
+                                                    aria-controls="DataTables_Table_0"><span>Print</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div id="DataTables_Table_0_filter" class="dataTables_filter">
+                                                <label>Search:<input type="search" class="form-control input-sm"
+                                                        placeholder="" aria-controls="DataTables_Table_0"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <table class="datatable table table-striped table-bordered dataTable no-footer dtr-inline collapsed"
+                                        cellspacing="0" width="100%" id="DataTables_Table_0" role="grid" style="width: 100%;">
+                                        <thead>
+                                            <tr role="row">
+                                                <th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0"
+                                                    rowspan="1" colspan="1" aria-sort="ascending" aria-label="SL.NO: activate to sort column descending"
+                                                    style="width: 43px;">SL.NO</th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                    rowspan="1" colspan="1" aria-label="Picture: activate to sort column ascending"
+                                                    style="width: 51px;">Picture</th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                    rowspan="1" colspan="1" aria-label="First Name: activate to sort column ascending"
+                                                    style="width: 42px;">First Name</th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                    rowspan="1" colspan="1" aria-label="Last Name: activate to sort column ascending"
+                                                    style="width: 50px;">Last Name</th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                    rowspan="1" colspan="1" aria-label="Department: activate to sort column ascending"
+                                                    style="width: 86px;">Department</th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                    rowspan="1" colspan="1" aria-label="Email Address: activate to sort column ascending"
+                                                    style="width: 129px;">Email Address</th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                    rowspan="1" colspan="1" aria-label="Mobile No: activate to sort column ascending"
+                                                    style="width: 83px;">Mobile No</th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                    rowspan="1" colspan="1" aria-label="Phone No: activate to sort column ascending"
+                                                    style="width: 83px;">Phone No</th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                    rowspan="1" colspan="1" aria-label="Action: activate to sort column ascending"
+                                                    style="width: 46px; ">Action</th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                    rowspan="1" colspan="1" aria-label="Address: activate to sort column ascending"
+                                                    style="width: 57px; display: none;">Address</th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                    rowspan="1" colspan="1" aria-label="Sex: activate to sort column ascending"
+                                                    style="width: 26px; display: none;">Sex</th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                    rowspan="1" colspan="1" aria-label="Blood Group: activate to sort column ascending"
+                                                    style="width: 44px; display: none;">Blood Group</th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                    rowspan="1" colspan="1" aria-label="Date of Birth: activate to sort column ascending"
+                                                    style="width: 36px; display: none;">Date of Birth</th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                    rowspan="1" colspan="1" aria-label="User Role: activate to sort column ascending"
+                                                    style="width: 33px; display: none;">User Role</th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                    rowspan="1" colspan="1" aria-label="Create Date: activate to sort column ascending"
+                                                    style="width: 47px; display: none;">Create Date</th>
+                                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0"
+                                                    rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending"
+                                                    style="width: 45px; display: none;">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="gradeX odd" role="row">
+                                                <td class="sorting_1" tabindex="0">1</td>
+                                                <td><img src="../../../assets/images/49a4115d089c5861da48bcc437be38ae.png" alt="" width="65"
+                                                        height="50"></td>
+                                                <td>John</td>
+                                                <td>Doye</td>
+                                                <td>Nephrology</td>
+                                                <td>doctor@demo.com</td>
+                                                <td>6548965</td>
+                                                <td>984562856</td>
+                                                <td>
+                                                    <div class="action-btn">
+                                                        <a href="https://hospitalnew.bdtask.com/demo7/doctor/profile/22"
+                                                            class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a>
+                                                        <a href="https://hospitalnew.bdtask.com/demo7/doctor/edit/22"
+                                                            class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a>
+                                                        <a href="javascript:void(0);" class="btn btn-xs btn-danger"
+                                                            onclick="demoModeEnable()"><i class="fa fa-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                                <td style="display: none;">B25,London</td>
+                                                <td style="display: none;">Male</td>
+                                                <td style="display: none;">B+</td>
+                                                <td style="display: none;">2020-05-17</td>
+                                                <td style="display: none;">Doctor</td>
+                                                <td style="display: none;">2020-05-18</td>
+                                                <td style="display: none;">Active</td>
+                                            </tr>
+                                            <tr class="gradeC even" role="row">
+                                                <td class="sorting_1" tabindex="0">2</td>
+                                                <td><img src="../../../assets/images/ae66a4ca7952505ef3980398dfa267d9.jpg" alt="" width="65"
+                                                        height="50"></td>
+                                                <td>Alan</td>
+                                                <td>Walker</td>
+                                                <td>Orthopaedics</td>
+                                                <td>alan@email.com</td>
+                                                <td>84589465</td>
+                                                <td>45846598</td>
+                                                <td>
+                                                    <div class="action-btn">
+                                                        <a href="https://hospitalnew.bdtask.com/demo7/doctor/profile/21"
+                                                            class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a>
+                                                        <a href="https://hospitalnew.bdtask.com/demo7/doctor/edit/21"
+                                                            class="btn btn-xs btn-primary"><i class="fa fa-edit"></i></a>
+                                                        <a href="javascript:void(0);" class="btn btn-xs btn-danger"
+                                                            onclick="demoModeEnable()"><i class="fa fa-trash"></i></a>
+                                                    </div>
+                                                </td>
+                                                <td style="display: none;">demo address</td>
+                                                <td style="display: none;">Female</td>
+                                                <td style="display: none;">A-</td>
+                                                <td style="display: none;">2020-05-16</td>
+                                                <td style="display: none;">Doctor</td>
+                                                <td style="display: none;">2020-05-16</td>
+                                                <td style="display: none;">Active</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                                        <ul class="pagination">
+                                            <li class="paginate_button previous disabled" id="DataTables_Table_0_previous">
+                                                <a href="https://hospitalnew.bdtask.com/demo7/doctor#" aria-controls="DataTables_Table_0"
+                                                    data-dt-idx="0" tabindex="0">Previous</a>
+                                            </li>
+                                            <li class="paginate_button active">
+                                                <a href="https://hospitalnew.bdtask.com/demo7/doctor#" aria-controls="DataTables_Table_0"
+                                                    data-dt-idx="1" tabindex="0">1</a></li>
+                                            <li class="paginate_button ">
+                                                <a href="https://hospitalnew.bdtask.com/demo7/doctor#" aria-controls="DataTables_Table_0"
+                                                    data-dt-idx="2" tabindex="0">2</a>
+                                            </li>
+                                            <li class="paginate_button next" id="DataTables_Table_0_next">
+                                                <a href="https://hospitalnew.bdtask.com/demo7/doctor#" aria-controls="DataTables_Table_0"
+                                                    data-dt-idx="3" tabindex="0">Next</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- /.table-responsive -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.content -->
+        </div> <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            2020 @Copyright bdtask
+        </footer>
+    </div> <!-- ./wrapper -->
+
+</body>
